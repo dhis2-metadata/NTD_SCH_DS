@@ -1,4 +1,4 @@
-# Neglected Tropical Diseases (NTD) Installation Guide { #ntd-agg-installation }
+# NTD disease specific: Schistosomiasis - Installation Guide { #ntd-sch-ds-installation }
 
 This document includes an installation guide for the Neglected Tropical Diseases package.
 
@@ -10,8 +10,8 @@ The metadata reference and metadata json files provide technical details on pack
 
 The metadata package consists of the following modules:
 
-- Neglected Tropical Diseases
-- Neglected Tropical Diseases (dashboard)
+- NTD disease specific: Schistosomiasis
+- NTD disease specific: Schistosomiasis (dashboard)
 
 ## Installation
 
@@ -88,6 +88,7 @@ contains the UIDs which could be replaced, as well as the API endpoints to ident
 |-------------------------|---------------|--------------------------------------------------------------------------|
 | Percentage              | `hmSnCXmLYwt` | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:100` |
 | Numerator only (number) | `CqNPn5KzksS` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1`    |
+| Per 100 000 | `FWTvArgP0jt` | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:10000`    |
 
 ### Visualizations using Root Organisation Unit UID
 
