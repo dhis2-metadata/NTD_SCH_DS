@@ -101,9 +101,47 @@ The **SCH toolkit** includes a **predefined dashboard** (NTD - Schistosomiasis) 
 
 ### Triangulating Data from Health Facilities and Community Sources
 
-Triangulating **Neglected Tropical Disease (NTD)** surveillance data from both **health facilities and community-level sources** is essential for building a more complete and actionable understanding of disease patterns. This integrated approach enhances the accuracy, completeness, and timeliness of data, allowing health programs to better detect outbreaks, identify transmission hotspots, and deploy more targeted interventions.
-Health facility data offers detailed clinical and treatment insights, while community-based data can capture cases, symptoms, and environmental risk factors that may not reach formal healthcare settings—especially in areas with limited access to care. Together, these sources help bridge surveillance gaps, improve resource allocation, and support evidence-based decision-making for more effective NTD control strategies.
-In the case of Schistosomiasis (SCH), WHO guidance highlights the importance of community-level monitoring and surveillance, particularly for identifying risk behaviors, environmental exposure, and subclinical morbidity. Much of the required metadata for community-based NTD surveillance is already mapped in the [NTD overarching module](https://docs.dhis2.org/en/implement/health/neglected-tropical-diseases/ntd-overarching-module/design.html#ntd-overarching-indicators) - Special considerations chapter - and aligned with the [DHIS2 Community Health Information Systems (CHIS) toolkit](https://docs.dhis2.org/en/implement/health/chis-community-health-information-system/overview.html).
+Triangulating **Neglected Tropical Disease (NTD)** surveillance data from both **health facilities and community-level sources** is essential for building a more complete and actionable understanding of disease patterns. This integrated approach enhances the **accuracy, completeness, and timeliness** of data, allowing health programs to better detect outbreaks, identify transmission hotspots, and deploy more targeted interventions.
 
+Health facility data offers detailed clinical and treatment insights, while community-based data can capture **cases, symptoms, and environmental risk factors** that may not reach formal healthcare settings—especially in areas with limited access to care. Together, these sources help bridge surveillance gaps, improve resource allocation, and support **evidence-based decision-making** for more effective NTD control strategies.
 
+In the case of **Schistosomiasis (SCH)**, WHO guidance highlights the importance of community-level monitoring and surveillance, particularly for identifying risk behaviors, environmental exposure, and subclinical morbidity. Much of the required metadata for community-based NTD surveillance is already mapped in the **[NTD overarching module](https://docs.dhis2.org/en/implement/health/neglected-tropical-diseases/ntd-overarching-module/design.html#ntd-overarching-indicators) - Special considerations chapter -** and aligned with the **[DHIS2 Community Health Information Systems (CHIS) toolkit](https://docs.dhis2.org/en/implement/health/chis-community-health-information-system/overview.html)**.
 
+The list below summarizes the key community-level data requirements from WHO: 
+
+- Number of schistosomiasis cases detected during the site survey
+- Number of people treated using schistosomiasis test & treat strategy
+- Number of individuals reporting visible hematuria or with positive dipstick for micro-hematuria
+- Number of individuals screened
+- Number of people receiving a dose of PC for deworming according to national policy
+- Number of people receiving a dose of PC (PZQ) against NTDs according to national policy
+- Number of people targeted for PC (PZQ) against NTDs according to national policy
+- Number of households in the targeted communities that received social mobilization/ awareness campaigns on schistosomiasis
+
+If additional SCH-specific community indicators are needed and not already included in the existing metadata, implementers have two options:
+
+- Integrate the missing variables into their current CHIS configuration, if one exists, to ensure streamlined data capture within existing workflows
+- Create a dedicated dataset for SCH-specific community surveillance, which can operate alongside the broader CHIS or NTD modules.
+
+This flexible approach ensures that all relevant community-level information is captured, regardless of the country's existing system maturity, and supports a more robust, responsive surveillance system for SCH control and elimination.
+
+### NTD Staff Metadata
+
+Integrating information on health staff and their NTD-specific training into the **Health Facility Profile (HFP)** program—within the broader **Healthcare System Accessibility** domain—greatly enhances the quality and strategic value of health system data. The **[HFP toolkit](https://docs.dhis2.org/en/implement/health/health-facility-profile/design.html#introduction)** in DHIS2 is designed to support structured and routine data collection on facility attributes, including infrastructure, service availability, and workforce readiness. When integrated into the national **HMIS**, this toolkit provides a comprehensive view of service delivery capacity and supports evidence-based planning and response.
+
+To avoid duplication and ensure consistency, it is important to note that a **[dedicated dataset for NTD staff and training information already exists in the NTD overarching module](https://docs.dhis2.org/en/implement/health/neglected-tropical-diseases/ntd-overarching-module/design.html#data-set-ntd-human-resources)**. This dataset includes key variables relevant to workforce capacity for NTD program implementation. Depending on a country’s configuration and workflow preferences, implementers should choose one of the following integration paths:
+
+- **If using the HFP program** as part of national infrastructure mapping, relevant NTD workforce data—such as the number of trained staff, training types, and date of last training—should be integrated directly into the HFA data collection forms using the toolkit's **dynamic digital questionnaire format**.
+- **If using the NTD Staff dataset from the overarching module**, implementers should ensure that this dataset includes all critical staff-related attributes and is updated regularly. Where appropriate, this dataset can be **linked or cross-referenced with HFP data** to enable unified reporting and reduce fragmentation.
+
+In both cases, the goal is to support **modular and flexible data management**, while ensuring that accurate, up-to-date information on human resources for NTD control is readily available. This enriched and integrated dataset is vital for **resource planning, training program evaluation, and emergency response preparedness**, particularly in endemic and high-risk areas.
+
+Depending on the preferred route, implementers should add to the chosen module this data point “Number of health workers receiving integrated in-serving training on FGS (female genital schisto) at least once a year”.
+
+### Triangulating SCH Surveillance with Environmental and Vector Monitoring
+
+Integrating **schistosomiasis surveillance** with environmental and vector monitoring is a key strategy for understanding transmission dynamics and strengthening disease control efforts. Given SCH's complex lifecycle — requiring both** human and freshwater snail hosts** — a siloed approach to surveillance limits the ability to detect transmission risks early and respond effectively.
+
+Triangulating data from **human case surveillance, environmental assessments (e.g., water source mapping), and intermediate host monitoring** allows public health authorities to identify potential hotspots, assess the risk of ongoing transmission, and tailor interventions such as snail control, water treatment, or behavior change communication.
+
+The **DHIS2 platform** supports this integrated approach by enabling the alignment of human health data with **animal health and vector datasets**, including those from the **[Entomology and Integrated Vector Management (IVM)](https://docs.dhis2.org/en/implement/health/entomology-and-vector-control/general-design.html)** toolkit and the [Animal Health](https://docs.dhis2.org/en/implement/health/animal-health/event-based-surveillance/overview.html) toolkit. By linking SCH case data with vector species presence, animal health, and water body status, countries can implement a more proactive, **One Health-aligned strategy**. This cross-sectoral collaboration improves the targeting of interventions and promotes a more holistic response to SCH control and eventual elimination.
