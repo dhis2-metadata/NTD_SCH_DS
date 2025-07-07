@@ -35,7 +35,7 @@ The dataset is intentionally streamlined and includes key information needed to 
 
 The dataset is currently assigned at district level to follow the same logic as the IVM and Entomology products currently available, but implementers can assign at the most relevant administrative level locally.
 
-![IVM dataset](resources/image/NTD_001.png)
+![IVM dataset](resources/images/NTD_001.png)
 
 ### Dataset: NTD-SCH-DS - Schistosomiasis surveillance
 
@@ -45,31 +45,31 @@ The dataset is designed for the **reporting of diseases at the point of care (he
 
 The section reports the key surveillance data points to be monitored for reporting. It has a **flat structure** and are disaggregated by **sex (male and female) and by Global NTD Annual Reporting Form (GNARF) age groups (less than 1y, 1 -4y, 5-14y, 15-24y, 25-49y, 50-64y, 65+ years)**.
 
-![Burden of disease](resources/image/NTD_002.png)
+![Burden of disease](resources/images/NTD_002.png)
 
 #### Cases by Diagnostic Method Section
 
 Although **clinical diagnosis** is often the most commonly used method for confirming schistosomiasis cases, this section also allows for the reporting of **laboratory confirmation by method**. Where alternative diagnostic methods are available at the local level, the **CoC** list (currently including: Dispstick, Kato Katz, CCA, CAA, Biopsy, PCR, Serology, Other) can be adapted accordingly to reflect those options.
 
-![Diagnostic methods](resources/image/NTD_003.png)
+![Diagnostic methods](resources/images/NTD_003.png)
 
 #### Cases by Species Section
 
 This section captures the number of confirmed cases by **Schistosoma species** (currently including: *S. haematobium, S. mansoni, S. japonicum, S. intercalatum, S. mekongi, S. guineensis, Other spp*), ensuring alignment with the vector species listed in the **Integrated Vector Management (IVM)** dataset. Implementers should ensure that any modifications to the list of parasite species are reflected in the corresponding vector species list, to maintain consistency across datasets and support accurate analysis.
 
-![Schistosoma spp.](resources/image/NTD_004.png)
+![Schistosoma spp.](resources/images/NTD_004.png)
 
 #### Cases Receiving Treatment by Treatment Type Section
 
 This section records the number of cases treated, disaggregated by **type of treatment**: **Praziquantel (PZQ), surgery, PZQ + surgery, and other**. It is important to note that the **total number of cases reported in this section should match** the number of cases receiving clinical treatment as recorded in the initial section of this dataset. This ensures internal consistency and accurate tracking of treatment coverage.
 
-![Treatment type](resources/image/NTD_005.png)
+![Treatment type](resources/images/NTD_005.png)
 
 #### Animals Treated by Species Section
 
 The section reports the number of animals treated for schistosomiasis by animal - Cow, Sheep, Pig, Water buffalo, Dog, Other.
 
-![Animals treated](resources/image/NTD_006.png)
+![Animals treated](resources/images/NTD_006.png)
 
 #### Hepatic and Urinary Tract Lesions Section
 
@@ -79,23 +79,23 @@ In addition to recording specific types of morbidity, the section also includes 
 
 While this section is part of the current dataset, it may also be **cloned and adapted** for use in the third dataset—specifically the one dedicated to reporting activities conducted during **surveys and outreach activities**. Implementers are encouraged to consult with relevant programme leads to determine whether this morbidity reporting section provides **additional value** beyond what is already included in the **NTD-SCH-DS: Schistosomiasis Screening Dataset**.
 
-![Lesions and their locations](resources/image/NTD_007.png)
+![Lesions and their locations](resources/images/NTD_007.png)
 
 ### Dataset: NTD-SCH-DS: Schistosomiasis Screening
 
 The dataset is made up of a single section collecting data on an individual screened, information on examinations and ultrasound, heavy intensity infection and on PC/MDA requirements. All the data points are disaggregated by **sex (male and female) and by Global NTD Annual Reporting Form (GNARF) age groups (less than 1y, 1 -4y, 5-14y, 15-24y, 25-49y, 50-64y, 65+ years)**.
 
-![Survey and screenings](resources/image/NTD_008.png)
+![Survey and screenings](resources/images/NTD_008.png)
 
 ## Dashboard
 
 The **SCH toolkit** includes a **predefined dashboard** (NTD - Schistosomiasis) organized into three distinct sections, each corresponding to one of the three core datasets. This structure supports users in navigating and interpreting data collected through the surveillance, the IVM, and **survey/outreach** activities, providing a clear and cohesive view of schistosomiasis surveillance and program performance.
 
-![SCH surveillance](resources/image/NTD_009.png)
+![SCH surveillance](resources/images/NTD_009.png)
 
-![SCH IVM](resources/image/NTD_010.png)
+![SCH IVM](resources/images/NTD_010.png)
 
-![SCH Screening](resources/image/NTD_011.png)
+![SCH Screening](resources/images/NTD_011.png)
 
 ## Special Considerations
 
